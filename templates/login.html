@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
+{% block content %}
     <h1>login</h1>
     <form action="/login" method="post">
         <input type="text" name="name" id="" placeholder="Name">
@@ -17,6 +9,4 @@
         <br>
         <input type="submit" value="login">
     </form>
-</body>
-
-</html>
+{% endblock %}
